@@ -1,0 +1,67 @@
+Coding:
+package QuizDanLabtest3;
+
+import java.util.Scanner;
+
+public class Q11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("The array for Q1:" );
+		displayarray();
+		
+	}
+	public static void displayarray(){
+		{  
+			int n;  
+			Scanner sc=new Scanner(System.in);  
+			System.out.print("Enter the number you want to put:");  
+			//reading the number of elements from the that we want to enter  
+			n=sc.nextInt();  
+			//creates an array in the memory of length 10  
+			int[] array = new int[10];  
+			System.out.println("Enter the integer of the array: ");  
+			for(int i=0; i<n; i++)  
+			{  
+			//reading array elements from the user   
+			array[i]=sc.nextInt();  
+			}  
+			System.out.println("Array elements are: ");  
+			// accessing array elements using the for loop  
+			for (int i=0; i<n; i++)   
+			{  
+			System.out.println(array[i]);
+			}
+			System.out.println("Enter what element you want to see in 3?");
+			System.out.println("The element 3 is: " + array[3]);
+			}  
+		}
+	}
+
+Output:
+The array for Q1:
+Enter the number you want to put:10
+Enter the integer of the array: 
+34
+56
+74
+34
+67
+43
+56
+32
+56
+74
+Array elements are: 
+34
+56
+74
+34
+67
+43
+56
+32
+56
+74
+Enter what element you want to see in 3?
+The element 3 is: 34
